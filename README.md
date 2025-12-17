@@ -1,6 +1,6 @@
-# Advanced SQL Agro Pipeline 🚜 🌽
+# SQL Agro Pipeline 🚜 🌽
 
-![SQL](https://img.shields.io/badge/Skill-Advanced%20SQL-orange)
+![SQL](https://img.shields.io/badge/Skill-SQL-orange)
 ![Python](https://img.shields.io/badge/Code-Python%20%7C%20Pandas-blue)
 ![Database](https://img.shields.io/badge/Database-SQLite-lightgrey)
 
