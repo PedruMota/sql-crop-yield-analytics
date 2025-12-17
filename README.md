@@ -36,7 +36,7 @@ The core of this project is the `notebooks/sql_data_modeling.ipynb` file, which 
 1.  **Clone the repository:**
     ```bash
     git clone [https://github.com/PedruMota/Advanced-SQL-Agro-Pipeline.git](https://github.com/PedruMota/sql-crop-yield-analytics.git)
-    cd Advanced-SQL-Agro-Pipeline
+    cd SQL-Agro-Pipeline
     ```
 
 2.  **Set up the environment:**
@@ -63,6 +63,6 @@ The core of this project is the `notebooks/sql_data_modeling.ipynb` file, which 
 | 1996 | Maize | 30,763        | 📈 +5.35%  |
 
 ---
-*Author: Pedro Mota*
+*Author: Pedro Mota* \n
 *Dataset Source: [Kaggle Crop Yield Prediction](https://www.kaggle.com/datasets/patelris/crop-yield-prediction-dataset)*
 ...
