@@ -2,7 +2,7 @@ import pandas as pd
 import sqlite3
 import os
 
-# --- PATH CONFIGURATION (Robust Engineering) ---
+# --- PATH CONFIGURATION  ---
 # Gets the directory where this script is located
 base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Define paths for the CSV file and the Database
@@ -25,10 +25,8 @@ def etl_process():
         # This makes writing SQL queries much easier later.
         df.columns = [col.strip().lower().replace(' ', '_') for col in df.columns]
         
-        # Renaming specific columns if necessary (based on common Kaggle datasets)
-        # For example, if there is a column 'hg/ha_yield', let's rename it to just 'yield'
-        # 'area' in the CSV is actually the Country Name
-        df.rename(columns={'hg/ha_yield': 'yield', 'area': 'country'}, inplace=True)
+        # Renaming specific columns
+        df.rename(columns={'unnamed:_0': 'id', 'hg/ha_yield': 'yield', 'area': 'country'}, inplace=True)
         
         print(f"📋 Detected Columns: {list(df.columns)}")
         
