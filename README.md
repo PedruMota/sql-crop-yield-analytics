@@ -63,6 +63,7 @@ The core of this project is the `notebooks/sql_data_modeling.ipynb` file, which 
 | 1996 | Maize | 30,763        | 📈 +5.35%  |
 
 ---
-*Author: Pedro Mota* \n
+*Author: Pedro Mota*
+
 *Dataset Source: [Kaggle Crop Yield Prediction](https://www.kaggle.com/datasets/patelris/crop-yield-prediction-dataset)*
 ...
