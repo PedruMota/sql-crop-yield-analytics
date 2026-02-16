@@ -4,24 +4,24 @@
 ![Python](https://img.shields.io/badge/Code-Python%20%7C%20Pandas-blue)
 ![Database](https://img.shields.io/badge/Database-SQLite-lightgrey)
 
-## 📋 Project Overview
+## Project Overview
 This project demonstrates an end-to-end **Data Engineering** pipeline applied to the Agriculture sector. 
 
 The goal was to transform raw, unstructured data (CSV) into a high-performance **Star Schema Data Warehouse** using Python for ingestion and **SQL** for data modeling and analysis. The project focuses on analyzing global crop yield trends and Year-Over-Year (YoY) growth using Window Functions.
 
-## ⚙️ Architecture & Technologies
+## Architecture & Technologies
 * **Ingestion (ETL):** Python (`Pandas`) to clean and load raw CSV data into a staging area.
 * **Database:** SQLite (embedded relational database).
 * **Data Modeling:** Transformation of flat tables into a **Star Schema** (Fact & Dimensions) using SQL DDL.
 * **Analysis:** Complex queries using **Window Functions** (`LAG`, `OVER`), **CTEs**, and **Views** for anomaly detection.
 
-## 🗂️ Data Modeling (Star Schema)
+## Data Modeling (Star Schema)
 To ensure data integrity and query performance, the database was normalized from a single flat table into a Relational Schema:
 
 * **Fact Table:** `fact_crop_yields` (Contains metrics: Yield, Rainfall, Temperature, Pesticides).
 * **Dimension Tables:** `dim_crops`, `dim_countries`.
 
-## 🧠 Key SQL Skills Demonstrated
+## Key SQL Skills Demonstrated
 The core of this project is the `notebooks/sql_data_modeling.ipynb` file, which covers:
 
 1.  **Normalization:** Converting raw text columns into normalized Dimension tables.
@@ -31,7 +31,7 @@ The core of this project is the `notebooks/sql_data_modeling.ipynb` file, which 
     ```
 3.  **Data Quality Views:** Creating a persistent SQL View (`view_data_anomalies`) to automatically flag data outliers (e.g., Temperature > 40°C).
 
-## 🚀 How to Run
+## How to Run
 
 1.  **Clone the repository:**
     ```bash
@@ -54,13 +54,13 @@ The core of this project is the `notebooks/sql_data_modeling.ipynb` file, which 
 4.  **Explore the Analysis:**
     Open `notebooks/sql_data_modeling.ipynb` in VS Code or Jupyter Lab to see the step-by-step SQL transformation.
 
-## 📊 Sample Results
+## Sample Results
 
 | Year | Crop  | Yield (hg/ha) | Growth %   |
 |------|-------|---------------|------------|
-| 1993 | Maize | 28,997        | 📈 +3.70%  |
-| 1994 | Maize | 28,344        | 📉 -2.25%  |
-| 1996 | Maize | 30,763        | 📈 +5.35%  |
+| 1993 | Maize | 28,997        | +3.70%  |
+| 1994 | Maize | 28,344        | -2.25%  |
+| 1996 | Maize | 30,763        | +5.35%  |
 
 ---
 *Author: Pedro Mota*
